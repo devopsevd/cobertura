@@ -14,7 +14,7 @@ node{
             if (isUnix()) {
                 sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean cobertura:cobertura -Dcobertura.report.format=xml"
             } else {
-                //bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+                bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean cobertura:cobertura -Dcobertura.report.format=xml/)
             }
         }
         
